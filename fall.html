@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-165052706-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-165052706-1');
+</script>
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>한국의 야생화</title>
+    <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
+    <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300|Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- =======================================================
+    Theme Name: Bethany
+    Theme URL: https://bootstrapmade.com/bethany-free-onepage-bootstrap-theme/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
+</head>
+
+<body>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165052706-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-165052706-1');
+    </script>
+    <!--header-->
+    <header class="main-header" id="header">
+        <div class="bg-color">
+            <!--nav-->
+            <nav class="nav navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="col-md-12">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynavbar" aria-expanded="false" aria-controls="navbar">
+                                <span class="fa fa-bars"></span>
+                            </button>
+                            <a href="index.html" class="navbar-brand">한국의 야생화</a>
+                        </div>
+                        <div class="collapse navbar-collapse navbar-right" id="mynavbar">
+                            <ul class="nav navbar-nav">
+                                <li>
+                                    <a href="index.html">HOME</a>
+                                </li>
+                                <li>
+                                    <a href="spring.html">봄 야생화</a>
+                                </li>
+                                <li>
+                                    <a href="summer.html">여름 야생화</a>
+                                </li>
+                                <li>
+                                    <a href="fall.html">가을 야생화</a>
+                                </li>
+                                <li>
+                                    <a href="winter.html">겨울 야생화</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!--/ nav-->
+            <div class="container text-center">
+                <div class="wrapper wow fadeInUp delay-05s">
+                    <!--<h2 class="top-title">Web Design & Development</h2>-->
+                    <h3 class="title">가을 야생화</h3>
+                    <!-- <h4 class="sub-title">We Create amazing designs</h4-->
+  <!-- NAV SECTION END-->
+
+        <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <div class="mt-3 container file-upload">
+            <div class="image-upload-wrap">
+                <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+                <div class="drag-text">
+                    <img src="img/upload.svg" class="mt-5 pt-5 upload">
+                    <h3 class="mb-5 pb-5 pt-4  upload-text">버섯 사진을 촬영하여 업로드하세요!</h3>
+                </div>
+            </div>
+            <div class="file-upload-content">
+                <img class="file-upload-image" id="face-image" src="#" alt="your image" />
+
+                <div id="loading" class="animated bounce">
+                    <div class="spinner-border" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                    <p class="text-center">구글 인공지능이 사진을 분석중입니다.</p>
+                </div>
+                <p class="result-message"></p>
+                <div id="label-container" class="d-flex flex-column justify-content-around"></div>
+
+                <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                <div class="addthis_inline_share_toolbox"></div>
+
+                <div class="pt-3 image-title-wrap">
+                    <button type="button p-2" class="try-again-btn" onclick="gaReload2();" data-toggle="modal" data-target="#adModal">
+                        <span class="try-again-text">다른 사진으로 재시도</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer pt-5 container d-flex justify-content-center">
+
+        </footer>
+
+        <!-- Modal -->
+        <div class="modal fade" id="adModal" tabindex="-1" role="dialog" aria-labelledby="adModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="adModalLabel">(AD)광고 - 재시도를 한번 더 눌러주세요.</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body d-flex justify-content-center">
+                        <ins class="kakao_ad_area" style="display:none;" 
+ data-ad-unit    = "DAN-1hrlykohv7gpu"  data-ad-width="300" data-ad-height="250"></ins>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                        <button type="button p-2" class="try-again-btn" onclick="gaReload2();">
+                            <span class="try-again-text">다른 사진으로 재시도</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            function gaReload1() {
+                gtag('event', '다른 사진으로 재시도 1차', {
+                    'event_category': '다른 사진으로 재시도'
+                });
+            }
+
+            function gaReload2() {
+                gtag('event', '다른 사진으로 재시도 2차', {
+                    'event_category': '다른 사진으로 재시도'
+                });
+                window.location.reload();
+            }
+        </script>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+        <script>
+            function readURL(input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+                    reader.onload = function(e) {
+                        $('.image-upload-wrap').hide();
+                        $('#loading').show();
+                        $('.file-upload-image').attr('src', e.target.result);
+                        $('.file-upload-content').show();
+                        $('.image-title').html(input.files[0].name);
+                    };
+                    reader.readAsDataURL(input.files[0]);
+                    init().then(function() {
+                        console.log("hello");
+                        predict();
+                        $('#loading').hide();
+                    });
+                } else {
+                    removeUpload();
+                }
+            }
+
+            function removeUpload() {
+                $('.file-upload-input').replaceWith($('.file-upload-input').clone());
+                $('.file-upload-content').hide();
+                $('.image-upload-wrap').show();
+            }
+            $('.image-upload-wrap').bind('dragover', function() {
+                $('.image-upload-wrap').addClass('image-dropping');
+            });
+            $('.image-upload-wrap').bind('dragleave', function() {
+                $('.image-upload-wrap').removeClass('image-dropping');
+            });
+        </script>
+        <script type="text/javascript">
+            // More API functions here:
+            // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
+            // the link to your model provided by Teachable Machine export panel
+           const URL = "https://teachablemachine.withgoogle.com/models/GUWhvikT8/";
+
+            let model, webcam, labelContainer, maxPredictions;
+            // Load the image model and setup the webcam
+            async function init() {
+                const modelURL = URL + "model.json";
+                const metadataURL = URL + "metadata.json";
+                // load the model and metadata
+                // Refer to tmImage.loadFromFiles() in the API to support files from a file picker
+                // or files from your local hard drive
+                // Note: the pose library adds "tmImage" object to your window (window.tmImage)
+                model = await tmImage.load(modelURL, metadataURL);
+                maxPredictions = model.getTotalClasses();
+                labelContainer = document.getElementById("label-container");
+                for (let i = 0; i < maxPredictions; i++) { // and class labels
+                    labelContainer.appendChild(document.createElement("div"));
+                }
+            }
+            // run the webcam image through the image model
+            async function predict() {
+                // predict can take in an image, video or canvas html element
+                var image = document.getElementById("face-image")
+                const prediction = await model.predict(image, false);
+                prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
+                console.log(prediction[0].className);
+                var resultMessege;
+                switch (prediction[0].className) {
+                     case "Class 1":
+                    resultMessege = "가는잎향유"
+                    break;
+                case "Class 2":
+                    resultMessege = "가시연꽃"
+                    break;
+                case "Class 3":
+                    resultMessege = "각시취"
+                    break;
+                case "Class 4":
+                    resultMessege = "감국"
+                    break;
+                case "Class 5":
+                    resultMessege = "개박하"
+                    break;
+                case "Class 6":
+                    resultMessege = "개발나물"
+                    break;
+                case "Class 7":
+                    resultMessege = "개쑥부쟁이"
+                    break;
+                case "Class 8":
+                    resultMessege = "갯쑥부쟁이"
+                    break;
+                case "Class 9":
+                    resultMessege = "고들빼기"
+                    break;
+                case "Class 10":
+                    resultMessege = "고사리삼"
+                    break;
+                case "Class 11":
+                    resultMessege = "구릿대"
+                    break;
+                case "Class 12":
+                    resultMessege = "구절초"
+                    break;
+                case "Class 13":
+                    resultMessege = "그늘돌쩌귀"
+                    break;
+                case "Class 14":
+                    resultMessege = "까실쑥부쟁이"
+                    break;
+                case "Class 15":
+                    resultMessege = "꽃향유"
+                    break;
+                case "Class 16":
+                    resultMessege = "꿩의비름"
+                    break;
+                case "Class 17":
+                    resultMessege = "나도송이풀"
+                    break;
+                case "Class 18":
+                    resultMessege = "놋젓가락나물"
+                    break;
+                case "Class 19":
+                    resultMessege = "누린내풀"
+                    break;
+                case "Class 20":
+                    resultMessege = "눈괴불주머니"
+                    break;
+                case "Class 21":
+                    resultMessege = "당잔대"
+                    break;
+                case "Class 22":
+                    resultMessege = "독활"
+                    break;
+                case "Class 23":
+                    resultMessege = "둥근잎꿩의비름"
+                    break;
+                case "Class 24":
+                    resultMessege = "땅귀개"
+                    break;
+                case "Class 25":
+                    resultMessege = "뚜껑덩굴"
+                    break;
+                case "Class 26":
+                    resultMessege = "며느리밑씻개"
+                    break;
+                case "Class 27":
+                    resultMessege = "며느리배꼽"
+                    break;
+                case "Class 28":
+                    resultMessege = "무릇"
+                    break;
+                case "Class 29":
+                    resultMessege = "물매화"
+                    break;
+                case "Class 30":
+                    resultMessege = "물질경이"
+                    break;
+                case "Class 31":
+                    resultMessege = "미역취"
+                    break;
+                case "Class 32":
+                    resultMessege = "바디나물"
+                    break;
+                case "Class 33":
+                    resultMessege = "바위솔"
+                    break
+                case "Class 34":
+                    resultMessege = "버드쟁이나물"
+                    break;
+                case "Class 35":
+                    resultMessege = "벌개미취"
+                    break;
+                case "Class 36":
+                    resultMessege = "병아리풀"
+                    break;
+                case "Class 37":
+                    resultMessege = "부추"
+                    break;
+                case "Class 38":
+                    resultMessege = "분홍바늘꽃"
+                    break;
+                case "Class 39":
+                    resultMessege = "사마귀풀"
+                    break;
+                case "Class 40":
+                    resultMessege = "산국"
+                    break;
+                case "Class 41":
+                    resultMessege = "산박하"
+                    break;
+                case "Class 42":
+                    resultMessege = "산비장이"
+                    break;
+                case "Class 43":
+                    resultMessege = "솔체꽃"
+                    break;
+                case "Class 44":
+                    resultMessege = "쇠비름"
+                    break;
+                case "Class 45":
+                    resultMessege = "쇠서나물"
+                    break;
+                case "Class 46":
+                    resultMessege = "수리취"
+                    break;
+                case "Class 47":
+                    resultMessege = "시호"
+                    break;
+                case "Class 48":
+                    resultMessege = "쓴풀"
+                    break;
+                case "Class 49":
+                    resultMessege = "애기앉은부채"
+                    break;
+                case "Class 50":
+                    resultMessege = "억새"
+                    break;
+                case "Class 51":
+                    resultMessege = "오이풀"
+                    break;
+                case "Class 52":
+                    resultMessege = "용담"
+                    break;
+                case "Class 53":
+                    resultMessege = "이고들빼기"
+                    break;
+                case "Class 54":
+                    resultMessege = "이삭귀개"
+                    break;
+                case "Class 55":
+                    resultMessege = "이삭여뀌"
+                    break;
+                case "Class 56":
+                    resultMessege = "자주쓴풀"
+                    break;
+                case "Class 57":
+                    resultMessege = "잔대"
+                    break;
+                case "Class 58":
+                    resultMessege = "절굿대"
+                    break;
+                case "Class 59":
+                    resultMessege = "조밥나물"
+                    break;
+                case "Class 60":
+                    resultMessege = "쥐꼬리망초"
+                    break;
+                case "Class 61":
+                    resultMessege = "쥐손이풀"
+                    break;
+                case "Class 62":
+                    resultMessege = "진퍼리용담"
+                    break;
+                case "Class 63":
+                    resultMessege = "참취"
+                    break;
+                case "Class 64":
+                    resultMessege = "천궁"
+                    break;
+                case "Class 65":
+                    resultMessege = "층꽃나무"
+                    break;
+                case "Class 66":
+                    resultMessege = "층층이꽃"
+                    break;
+                case "Class 67":
+                    resultMessege = "층층잔대"
+                    break;
+                case "Class 68":
+                    resultMessege = "칼잎용담"
+                    break;
+                case "Class 69":
+                    resultMessege = "큰시호"
+                    break;
+                case "Class 70":
+                    resultMessege = "큰엉겅퀴"
+                    break;
+                case "Class 71":
+                    resultMessege = "큰제비고깔"
+                    break;
+                case "Class 72":
+                    resultMessege = "키큰산국"
+                    break;
+                case "Class 73":
+                    resultMessege = "털머위"
+                    break;
+                case "Class 74":
+                    resultMessege = "털진득찰"
+                    break;
+                case "Class 75":
+                    resultMessege = "투구꽃"
+                    break;
+                case "Class 76":
+                    resultMessege = "팔손이"
+                    break;
+                case "Class 77":
+                    resultMessege = "한련초"
+                    break;
+                case "Class 78":
+                    resultMessege = "해국"
+                    break;
+                case "Class 79":
+                    resultMessege = "활나물"
+                    break;
+                case "Class 80":
+                    resultMessege = "황금"
+                    break;
+                case "Class 81":
+                    resultMessege = "황기"
+                    break;
+                case "Class 82":
+                    resultMessege = "흰진교"
+                    break;
+                
+                default:
+                    resultMessege = "알수없음"
+                    break;
+            }
+            $('.result-message').html(resultMessege);
+        }
+    </script>
+
+        <!-- FEATURE SECTION END-->
+        <!--
+   <section id="team-sec">
+        <div class="container">
+            <div class="row pad-btm">
+                <div class="col-lg-8 col-md-8 col-sm-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-12">
+                    <h1 data-scroll-reveal="enter from the bottom after 0.1s">TEAM </h1>
+                    <p data-scroll-reveal="enter from the bottom after 0.3s">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  Mauris sagittis felis dolor, id gravida tellus tempor vitae. In efficitur ipsum non faucibus tempus.
+                    </p>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-2  col-xs-12 " data-scroll-reveal="enter from the bottom after 0.4s">
+                    <img src="assets/img/1t.jpg" class="img-circle img-responsive set-img" />
+
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4  col-xs-12 " data-scroll-reveal="enter from the bottom after 0.5s">
+                    <h2>SUSAN KIM</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                          Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2  col-xs-12 " data-scroll-reveal="enter from the bottom after 0.6s">
+                    <img src="assets/img/2t.jpg" class="img-circle img-responsive set-img" />
+
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4  col-xs-12 " data-scroll-reveal="enter from the bottom after 0.7s">
+                    <h2>JHON MARK JEGAL</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                           Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>-->
+        <!-- TEAM SECTION END-->
+        <!--  <section id="contact-sec">
+        <div class="container">
+            <div class="row pad-btm">
+                <div class="col-lg-8 col-md-8 col-sm-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-12">
+                    <h1 data-scroll-reveal="enter from the bottom after 0.1s">연락처</h1>
+                    <p data-scroll-reveal="enter from the bottom after 0.3s">
+                 <!--       Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  Mauris sagittis felis dolor, id gravida tellus tempor vitae. In efficitur ipsum non faucibus tempus. 
+                    </p>
+                </div>
+
+            </div>
+            <div class="row pad-btm">
+
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12  " data-scroll-reveal="enter from the bottom after 0.5s">
+                    <h2>주소</h2>
+                    <p>
+                        서울특별시 중구 청계천로 40             <br />
+                    <h2>전화번호</h2>
+                    <p>
+                        02-3810-3013          <br />
+                    </p>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2  col-xs-12 " data-scroll-reveal="enter from the bottom after 0.6s">
+                    <img src="assets/img/1t.jpg" class="img-circle img-responsive cnt-img" />
+
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4  col-xs-12 " data-scroll-reveal="enter from the bottom after 0.6s">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                          Lorem ipsum dolor sit amet.
+                    </p>
+                    <div class="form-group">
+                        <input type="text" class="form-control" />
+                        <br />
+                        <a href="#" class="btn btn-primary">SUBSCRIBE FOR UPDATES</a>
+                    </div>
+                </div>
+
+            </div>
+            
+                 </div>
+
+    </section> 
+    <!-- CONTACT SECTION END-->
+        <!-- AD BANNER-->
+        <!--<div id="coupang" class="container d-flex justify-content-center">
+        <script src="https://ads-partners.coupang.com/g.js"></script>
+        <script>
+            new PartnersCoupang.G({
+                "id": 223357,
+                "subId": null
+            });
+        </script>
+    </div> -->
+          <!-- FOOTER SECTION END-->
+        <!--CORE SCRIPTS-->
+                       <br/>
+<div class="ad-banner">
+            <ins class="kakao_ad_area" style="display:none;" 
+ data-ad-unit    = "DAN-1hrlykohv7gpu" 
+ data-ad-width   = "320" 
+ data-ad-height  = "100"></ins> 
+<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+        </div>
+        <!---->
+        <footer class="" id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-7 footer-copyright">
+                        © 한국의 식물도감 2020 - All rights reserved
+                        <div class="credits">
+                            <!--
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Bethany
+            -->
+                             
+                       Designed by
+                        <a href="https://bootstrapmade.com/">BootstrapMade</a>>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 footer-social">
+                        <div class="pull-right hidden-xs hidden-sm">
+                            <a href="#">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-dribbble"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-pinterest"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!---->
+        <!--contact ends-->
+       
+
+    </body>
+    <script src="assets/js/jquery-1.11.1.js"></script>
+    <!--BOOTSTRAP SCRIPTS-->
+    <script src="assets/js/bootstrap.js"></script>
+    <!--WOW SCRIPTS-->
+    <script src="assets/js/wow.js"></script>
+    <!--SCROLL SCRIPTS-->
+    <script src="assets/js/jquery.smooth-scroll.min.js"></script>
+    <!--SCROLL ANIMATION SCRIPTS-->
+    <script src="assets/js/scrollReveal.js"></script>
+    <!--CUSTOM SCRIPTS-->
+    <script src="assets/js/custom.js"></script>
+
+    <body>
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ea9dd0e7ffa2444"></script>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" <!-- image input box Copyright (c) 2020 by Aaron Vanston (https://codepen.io/aaronvanston/pen/yNYOXR) Permission is hereby granted, free of charge, to any person obtaining
+            a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+            of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+            THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+            HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. gender toggle Copyright (c)
+            2020 by Mert Cukuren (https://codepen.io/knyttneve/pen/bPpEZY) Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction,
+            including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The
+            above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+            OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+            OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. -->
+            < /html>

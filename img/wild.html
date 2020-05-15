@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Jua&display=swap" rel="stylesheet">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>한국의 식물도감</title>
+    <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
+    <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300|Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- =======================================================
+    Theme Name: Bethany
+    Theme URL: https://bootstrapmade.com/bethany-free-onepage-bootstrap-theme/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
+</head>
+
+<body>
+    <script data-ad-client="ca-pub-0601833367696437" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165052706-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-165052706-1');
+    </script>
+    <!--header-->
+    <header class="main-header" id="header">
+        <div class="bg-color">
+            <!--nav-->
+            <nav class="nav navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="col-md-12">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynavbar" aria-expanded="false" aria-controls="navbar">
+                                <span class="fa fa-bars"></span>
+                            </button>
+                            <a href="index.html" class="navbar-brand">한국의 식물도감</a>
+                        </div>
+                        <div class="collapse navbar-collapse navbar-right">
+                            <ul class="nav navbar-nav">
+                                <li>
+                                    <a href="index.html">HOME</a>
+                                </li>
+                                <li>
+                                    <a href="wild.html">들꽃</a>
+                                </li>
+                                <li>
+                                    <a href="medicine.html">약초</a>
+                                </li>
+                                <li>
+                                    <a href="mushroom.html">버섯</a>
+                                </li>
+                                <li>
+                                    <a href="tree.html">나무</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!--/ nav-->
+            <div class="container text-center">
+                <div class="wrapper wow fadeInUp delay-05s">
+                    <!--<h2 class="top-title">Web Design & Development</h2>-->
+                    <h3 class="title">한국의 들꽃</h3>
+                    <!-- <h4 class="sub-title">We Create amazing designs</h4-->
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <body>
+
+        <!-- NAV SECTION END-->
+
+        <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <div class="mt-3 container file-upload">
+            <div class="image-upload-wrap">
+                <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+                <div class="drag-text">
+                    <img src="img/upload.svg" class="mt-5 pt-5 upload">
+                    <h3 class="mb-5 pb-5 pt-4  upload-text">들꽃 사진을 촬영하여 업로드하세요!</h3>
+                </div>
+            </div>
+            <div class="file-upload-content">
+                <img class="file-upload-image" id="face-image" src="#" alt="your image" />
+
+                <div id="loading" class="animated bounce">
+                    <div class="spinner-border" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                    <p class="text-center">구글 인공지능이 사진을 분석중입니다.</p>
+                </div>
+                <p class="result-message"></p>
+                <div id="label-container" class="d-flex flex-column justify-content-around"></div>
+
+                <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                <div class="addthis_inline_share_toolbox"></div>
+
+                <div class="pt-3 image-title-wrap">
+                    <button type="button p-2" class="try-again-btn" onclick="gaReload2();" data-toggle="modal" data-target="#adModal">
+                        <span class="try-again-text">다른 사진으로 재시도</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer pt-5 container d-flex justify-content-center">
+
+        </footer>
+
+        <!-- Modal -->
+        <div class="modal fade" id="adModal" tabindex="-1" role="dialog" aria-labelledby="adModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="adModalLabel">(AD)광고 - 재시도를 한번 더 눌러주세요.</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body d-flex justify-content-center">
+                        <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-t89oh3sc0ew5" data-ad-width="300" data-ad-height="250"></ins>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                        <button type="button p-2" class="try-again-btn" onclick="gaReload2();">
+                            <span class="try-again-text">다른 사진으로 재시도</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            function gaReload1() {
+                gtag('event', '다른 사진으로 재시도 1차', {
+                    'event_category': '다른 사진으로 재시도'
+                });
+            }
+
+            function gaReload2() {
+                gtag('event', '다른 사진으로 재시도 2차', {
+                    'event_category': '다른 사진으로 재시도'
+                });
+                window.location.reload();
+            }
+        </script>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+        <script>
+            function readURL(input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+                    reader.onload = function(e) {
+                        $('.image-upload-wrap').hide();
+                        $('#loading').show();
+                        $('.file-upload-image').attr('src', e.target.result);
+                        $('.file-upload-content').show();
+                        $('.image-title').html(input.files[0].name);
+                    };
+                    reader.readAsDataURL(input.files[0]);
+                    init().then(function() {
+                        console.log("hello");
+                        predict();
+                        $('#loading').hide();
+                    });
+                } else {
+                    removeUpload();
+                }
+            }
+
+            function removeUpload() {
+                $('.file-upload-input').replaceWith($('.file-upload-input').clone());
+                $('.file-upload-content').hide();
+                $('.image-upload-wrap').show();
+            }
+            $('.image-upload-wrap').bind('dragover', function() {
+                $('.image-upload-wrap').addClass('image-dropping');
+            });
+            $('.image-upload-wrap').bind('dragleave', function() {
+                $('.image-upload-wrap').removeClass('image-dropping');
+            });
+        </script>
+        <script type="text/javascript">
+            // More API functions here:
+            // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
+            // the link to your model provided by Teachable Machine export panel
+            const URL = "https://teachablemachine.withgoogle.com/models/rBEm_YdXX/";
+            let model, webcam, labelContainer, maxPredictions;
+            // Load the image model and setup the webcam
+            async function init() {
+                const modelURL = URL + "model.json";
+                const metadataURL = URL + "metadata.json";
+                // load the model and metadata
+                // Refer to tmImage.loadFromFiles() in the API to support files from a file picker
+                // or files from your local hard drive
+                // Note: the pose library adds "tmImage" object to your window (window.tmImage)
+                model = await tmImage.load(modelURL, metadataURL);
+                maxPredictions = model.getTotalClasses();
+                labelContainer = document.getElementById("label-container");
+                for (let i = 0; i < maxPredictions; i++) { // and class labels
+                    labelContainer.appendChild(document.createElement("div"));
+                }
+            }
+            // run the webcam image through the image model
+            async function predict() {
+                // predict can take in an image, video or canvas html element
+                var image = document.getElementById("face-image")
+                const prediction = await model.predict(image, false);
+                prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
+                console.log(prediction[0].className);
+                var resultMessege;
+                switch (prediction[0].className) {
+                    case "Class 1":
+                        resultMessege = "가죽밤그물버섯"
+                        break;
+                    case "Class 2":
+                        resultMessege = "갈색솔방울버섯"
+                        break;
+                    case "Class 3":
+                        resultMessege = "개암다발버섯"
+                        break;
+                    case "Class 4":
+                        resultMessege = "검은비늘버섯"
+                        break;
+                    case "Class 5":
+                        resultMessege = "고무버섯"
+                        break;
+                    case "Class 6":
+                        resultMessege = "국수버섯"
+                        break;
+                    case "Class 7":
+                        resultMessege = "굴털이"
+                        break;
+                    case "Class 8":
+                        resultMessege = "젖버섯"
+                        break;
+                    case "Class 9":
+                        resultMessege = "그물버섯"
+                        break;
+                    case "Class 10":
+                        resultMessege = "기와버섯"
+                        break;
+                    case "Class 11":
+                        resultMessege = "꽃송이버섯"
+                        break;
+                    case "Class 12":
+                        resultMessege = "꾀꼬리버섯"
+                        break;
+                    case "Class 13":
+                        resultMessege = "노란구름벚꽃버섯"
+                        break;
+                    case "Class 14":
+                        resultMessege = "흑갈색벚꽃버섯"
+                        break;
+                    case "Class 15":
+                        resultMessege = "노란달걀버섯"
+                        break;
+                    case "Class 16":
+                        resultMessege = "노랑난버섯"
+                        break;
+                    case "Class 17":
+                        resultMessege = "노랑느타리버섯"
+                        break;
+                    case "Class 18":
+                        resultMessege = "노루궁뎅이버섯"
+                        break;
+                    case "Class 19":
+                        resultMessege = "느타리버섯"
+                        break;
+                    case "Class 20":
+                        resultMessege = "능이버섯"
+                        break;
+                    case "Class 21":
+                        resultMessege = "달걀버섯"
+                        break;
+                    case "Class 22":
+                        resultMessege = "댕구알버섯"
+                        break;
+                    case "Class 23":
+                        resultMessege = "덕다리버섯"
+                        break;
+                    case "Class 24":
+                        resultMessege = "독청버섯아재비"
+                        break;
+                    case "Class 25":
+                        resultMessege = "두엄먹물버섯"
+                        break;
+                    case "Class 26":
+                        resultMessege = "땅송이"
+                        break;
+                    case "Class 27":
+                        resultMessege = "마른산그물버섯"
+                        break;
+                    case "Class 28":
+                        resultMessege = "만가닥버섯"
+                        break;
+                    case "Class 29":
+                        resultMessege = "맛버섯"
+                        break;
+                    case "Class 30":
+                        resultMessege = "독우산광대버섯"
+                        break;
+                    case "Class 31":
+                        resultMessege = "나도팽나무버섯"
+                        break;
+                    case "Class 32":
+                        resultMessege = "모래배꼽버섯"
+                        break;
+                    case "Class 33":
+                        resultMessege = "망태버섯"
+                        break
+                    case "Class 34":
+                        resultMessege = "목이버섯"
+                        break;
+                    case "Class 35":
+                        resultMessege = "흑갈색벚꽃버섯"
+                        break;
+                    case "Class 36":
+                        resultMessege = "방추광대버섯"
+                        break;
+                    case "Class 37":
+                        resultMessege = "밤버섯"
+                        break;
+                    case "Class 38":
+                        resultMessege = "배불뚝이깔대기버섯"
+                        break;
+                    case "Class 39":
+                        resultMessege = "버터애기버섯"
+                        break;
+                    case "Class 40":
+                        resultMessege = "배젖버섯"
+                        break;
+                    case "Class 41":
+                        resultMessege = "볏짚버섯"
+                        break;
+                    case "Class 42":
+                        resultMessege = "북방처녀버섯"
+                        break;
+                    case "Class 43":
+                        resultMessege = "붉은점박이광대버섯"
+                        break;
+                    case "Class 44":
+                        resultMessege = "뽕나무버섯부치"
+                        break;
+                    case "Class 45":
+                        resultMessege = "뿔나팔버섯"
+                        break;
+                    case "Class 46":
+                        resultMessege = "새송이버섯"
+                        break;
+                    case "Class 47":
+                        resultMessege = "석이버섯"
+                        break;
+                    case "Class 48":
+                        resultMessege = "소혀버섯"
+                        break;
+                    case "Class 49":
+                        resultMessege = "솔버섯"
+                        break;
+                    case "Class 50":
+                        resultMessege = "솜귀신그물버섯"
+                        break;
+                    case "Class 51":
+                        resultMessege = "송이버섯"
+                        break;
+                    case "Class 52":
+                        resultMessege = "송로버섯"
+                        break;
+                    case "Class 53":
+                        resultMessege = "싸리버섯"
+                        break;
+                    case "Class 54":
+                        resultMessege = "아위버섯"
+                        break;
+                    case "Class 55":
+                        resultMessege = "안장버섯"
+                        break;
+                    case "Class 56":
+                        resultMessege = "양송이버섯"
+                        break;
+                    case "Class 57":
+                        resultMessege = "영지버섯"
+                        break;
+                    case "Class 58":
+                        resultMessege = "옥수수깜부기버섯"
+                        break;
+                    case "Class 59":
+                        resultMessege = "우산버섯"
+                        break;
+                    case "Class 60":
+                        resultMessege = "잎새버섯"
+                        break;
+                    case "Class 61":
+                        resultMessege = "왕송이버섯"
+                        break;
+                    case "Class 62":
+                        resultMessege = "자주국수버섯"
+                        break;
+                    case "Class 63":
+                        resultMessege = "젓비단그물버섯"
+                        break;
+                    case "Class 64":
+                        resultMessege = "접시껄껄이그물버섯"
+                        break;
+                    case "Class 65":
+                        resultMessege = "족제비눈물버섯"
+                        break;
+                    case "Class 66":
+                        resultMessege = "졸각버섯"
+                        break;
+                    case "Class 67":
+                        resultMessege = "좀나무싸리버섯"
+                        break;
+                    case "Class 68":
+                        resultMessege = "참부채버섯"
+                        break;
+                    case "Class 69":
+                        resultMessege = "찹쌀떡버섯"
+                        break;
+                    case "Class 70":
+                        resultMessege = "백화사설초"
+                        break;
+                    case "Class 71":
+                        resultMessege = "청머루무당버섯"
+                        break;
+                    case "Class 72":
+                        resultMessege = "치마버섯"
+                        break;
+                    case "Class 73":
+                        resultMessege = "큰갓버섯"
+                        break;
+                    case "Class 74":
+                        resultMessege = "턱수염버섯"
+                        break;
+                    case "Class 75":
+                        resultMessege = "털밤그물버섯"
+                        break;
+                    case "Class 76":
+                        resultMessege = "팽이버섯"
+                        break;
+                    case "Class 77":
+                        resultMessege = "붉은사슴뿔버섯"
+                        break;
+                    case "Class 78":
+                        resultMessege = "표고버섯"
+                        break;
+                    case "Class 79":
+                        resultMessege = "푸른우유버섯"
+                        break;
+                    case "Class 80":
+                        resultMessege = "풀버섯"
+                        break;
+                    case "Class 81":
+                        resultMessege = "풍선끈적버섯"
+                        break;
+                    case "Class 82":
+                        resultMessege = "피즙갈색깔때기버섯"
+                        break;
+                    case "Class 83":
+                        resultMessege = "황소비단그물버섯"
+                        break;
+                    case "Class 84":
+                        resultMessege = "황금무당버섯"
+                        break;
+                    case "Class 85":
+                        resultMessege = "흰가시광대버섯"
+                        break;
+                    case "Class 86":
+                        resultMessege = "흰달걀버섯"
+                        break;
+                    case "Class 87":
+                        resultMessege = "흰우단버섯"
+                        break;
+                    case "Class 88":
+                        resultMessege = "흰우산버섯"
+                        break;
+                    case "Class 89":
+                        resultMessege = "흰그물버섯"
+                        break;
+                    case "Class 90":
+                        resultMessege = "간버섯"
+                        break;
+                    case "Class 91":
+                        resultMessege = "구름버섯"
+                        break;
+                    case "Class 92":
+                        resultMessege = "동충하초"
+                        break;
+                    case "Class 93":
+                        resultMessege = "말굽버섯"
+                        break;
+                    case "Class 94":
+                        resultMessege = "복령"
+                        break;
+                    case "Class 95":
+                        resultMessege = "상황버섯"
+                        break;
+                    case "Class 96":
+                        resultMessege = "잔나비걸상버섯"
+                        break;
+                    case "Class 97":
+                        resultMessege = "차가버섯"
+                        break;
+                    case "Class 98":
+                        resultMessege = "영지버섯"
+                        break;
+                    case "Class 99":
+                        resultMessege = "혓바늘목이"
+                        break;
+                    case "Class 100":
+                        resultMessege = "한입버섯"
+                        break;
+                    case "Class 101":
+                        resultMessege = "한입버섯"
+                        break;
+                    case "Class 102":
+                        resultMessege = "긴골광대버섯아재비"
+                        break;
+                    case "Class 103":
+                        resultMessege = "깔때기무당버섯"
+                        break;
+                    case "Class 104":
+                        resultMessege = "냄새무당버섯"
+                        break;
+                    case "Class 105":
+                        resultMessege = "노란각시버섯"
+                        break;
+                    case "Class 106":
+                        resultMessege = "노란대광대버섯"
+                        break;
+                    case "Class 107":
+                        resultMessege = "독깔대기버섯"
+                        break;
+                    case "Class 108":
+                        resultMessege = "독흰갈대버섯"
+                        break;
+                    case "Class 109":
+                        resultMessege = "흰독큰갓버섯"
+                        break;
+                    case "Class 110":
+                        resultMessege = "무당버섯"
+                        break;
+                    case "Class 111":
+                        resultMessege = "밤자갈버섯"
+                        break;
+                    case "Class 112":
+                        resultMessege = "포도색자갈버섯"
+                        break;
+                    case "Class 113":
+                        resultMessege = "붉은꼭지버섯"
+                        break;
+                    case "Class 114":
+                        resultMessege = "자주색싸리버섯"
+                        break;
+                    case "Class 115":
+                        resultMessege = "붉은주머니광대버섯"
+                        break;
+                    case "Class 116":
+                        resultMessege = "비단빛깔대기버섯"
+                        break;
+                    case "Class 117":
+                        resultMessege = "비듬땀버섯"
+                        break;
+                    case "Class 118":
+                        resultMessege = "삼색도장버섯"
+                        break;
+                    case "Class 119":
+                        resultMessege = "삿갓땀버섯"
+                        break;
+                    case "Class 120":
+                        resultMessege = "삿갓외대버섯"
+                        break;
+                    case "Class 121":
+                        resultMessege = "솔땀버섯"
+                        break;
+                    case "Class 122":
+                        resultMessege = "시시버섯"
+                        break;
+                    case "Class 123":
+                        resultMessege = "암회색광대버섯아재비"
+                        break;
+                    case "Class 124":
+                        resultMessege = "우산광대버섯"
+                        break;
+                    case "Class 125":
+                        resultMessege = "웃음버섯"
+                        break;
+                    case "Class 126":
+                        resultMessege = "황토색어리알버섯"
+                        break;
+                    case "Class 127":
+                        resultMessege = "무당버섯"
+                        break
+                    case "Class 128":
+                        resultMessege = "흰계란말똥버섯"
+                        break;
+                    case "Class 129":
+                        resultMessege = "흰삿갓깔대기버섯"
+                        break;
+                    case "Class 130":
+                        resultMessege = "화경버섯"
+                        break;
+                    case "Class 131":
+                        resultMessege = "주사위환각버섯"
+                        break;
+                    case "Class 132":
+                        resultMessege = "뱀껍질광대버섯"
+                        break;
+                    case "Class 133":
+                        resultMessege = "독황토버섯"
+                        break;
+                    case "Class 134":
+                        resultMessege = "구근광대버섯"
+                        break;
+                    case "Class 135":
+                        resultMessege = "나리광대버섯"
+                        break;
+                    case "Class 136":
+                        resultMessege = "밤색갓버섯"
+                        break;
+                    case "Class 137":
+                        resultMessege = "솜갓버섯"
+                        break;
+                    case "Class 138":
+                        resultMessege = "애광대버섯"
+                        break;
+                    case "Class 139":
+                        resultMessege = "양파광대버섯"
+                        break;
+                    case "Class 140":
+                        resultMessege = "비탈광대버섯"
+                        break;
+                    case "Class 141":
+                        resultMessege = "절구무당버섯아재비"
+                        break;
+                    case "Class 142":
+                        resultMessege = "절구버섯아재비"
+                        break;
+                    case "Class 143":
+                        resultMessege = "턱받이광대버섯"
+                        break
+                    case "Class 144":
+                        resultMessege = "화경버섯"
+                        break;
+                    case "Class 145":
+                        resultMessege = "회흑색광대버섯"
+                        break;
+                    case "Class 146":
+                        resultMessege = "쓴맛그물버섯"
+                        break;
+                    case "Class 147":
+                        resultMessege = "흰오뚜기광대버섯"
+                        break;
+                    case "Class 148":
+                        resultMessege = "돌기광대버섯"
+                        break;
+                    case "Class 149":
+                        resultMessege = "뿌리광대버섯"
+                        break;
+                    case "Class 150":
+                        resultMessege = "무리우산버섯"
+                        break;
+                    case "Class 151":
+                        resultMessege = "나알광대버섯"
+                        break;
+                    case "Class 152":
+                        resultMessege = "흰알광대버섯"
+                        break;
+                    default:
+                        resultMessege = "알수없음"
+                        break;
+                }
+                $('.result-message').html(resultMessege);
+            }
+        </script>
+
+        <!-- FEATURE SECTION END-->
+        <!--
+   <section id="team-sec">
+        <div class="container">
+            <div class="row pad-btm">
+                <div class="col-lg-8 col-md-8 col-sm-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-12">
+                    <h1 data-scroll-reveal="enter from the bottom after 0.1s">TEAM </h1>
+                    <p data-scroll-reveal="enter from the bottom after 0.3s">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  Mauris sagittis felis dolor, id gravida tellus tempor vitae. In efficitur ipsum non faucibus tempus.
+                    </p>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-2  col-xs-12 " data-scroll-reveal="enter from the bottom after 0.4s">
+                    <img src="assets/img/1t.jpg" class="img-circle img-responsive set-img" />
+
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4  col-xs-12 " data-scroll-reveal="enter from the bottom after 0.5s">
+                    <h2>SUSAN KIM</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                          Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2  col-xs-12 " data-scroll-reveal="enter from the bottom after 0.6s">
+                    <img src="assets/img/2t.jpg" class="img-circle img-responsive set-img" />
+
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4  col-xs-12 " data-scroll-reveal="enter from the bottom after 0.7s">
+                    <h2>JHON MARK JEGAL</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                           Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>-->
+        <!-- TEAM SECTION END-->
+        <!--  <section id="contact-sec">
+        <div class="container">
+            <div class="row pad-btm">
+                <div class="col-lg-8 col-md-8 col-sm-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-12">
+                    <h1 data-scroll-reveal="enter from the bottom after 0.1s">연락처</h1>
+                    <p data-scroll-reveal="enter from the bottom after 0.3s">
+                 <!--       Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  Mauris sagittis felis dolor, id gravida tellus tempor vitae. In efficitur ipsum non faucibus tempus. 
+                    </p>
+                </div>
+
+            </div>
+            <div class="row pad-btm">
+
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12  " data-scroll-reveal="enter from the bottom after 0.5s">
+                    <h2>주소</h2>
+                    <p>
+                        서울특별시 중구 청계천로 40             <br />
+                    <h2>전화번호</h2>
+                    <p>
+                        02-3810-3013          <br />
+                    </p>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2  col-xs-12 " data-scroll-reveal="enter from the bottom after 0.6s">
+                    <img src="assets/img/1t.jpg" class="img-circle img-responsive cnt-img" />
+
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4  col-xs-12 " data-scroll-reveal="enter from the bottom after 0.6s">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                          Lorem ipsum dolor sit amet.
+                    </p>
+                    <div class="form-group">
+                        <input type="text" class="form-control" />
+                        <br />
+                        <a href="#" class="btn btn-primary">SUBSCRIBE FOR UPDATES</a>
+                    </div>
+                </div>
+
+            </div>
+            
+                 </div>
+
+    </section> 
+    <!-- CONTACT SECTION END-->
+        <!-- AD BANNER-->
+        <!--<div id="coupang" class="container d-flex justify-content-center">
+        <script src="https://ads-partners.coupang.com/g.js"></script>
+        <script>
+            new PartnersCoupang.G({
+                "id": 223357,
+                "subId": null
+            });
+        </script>
+    </div> -->
+        <!-- <div id="kakao" class="ad-banner">
+    <ins class="kakao_ad_area" style="display:none;" 
+ data-ad-unit    = "DAN-1hrlykohv7gpu" 
+ data-ad-width   = "320" 
+ data-ad-height  = "100"></ins> 
+<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+    </div>
+    <div id="footer-sec">
+        <a href=https://nowkorea.coml>
+            &nbsp;2020 NowKorea.com |
+            <a href="http://nowkorea.com" style="font-size: 14px; color: #fff" target="_blank">Inspired by Jocoding</a>
+            <!-- NAV SECTION END-->
+
+        <!-- FOOTER SECTION END-->
+        <!--CORE SCRIPTS-->
+
+        <!---->
+        <footer class="" id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-7 footer-copyright">
+                        © 한국의 식물도감 2020 - All rights reserved
+                        <div class="credits">
+                            <!--
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Bethany
+            -->
+                            Designed by
+                            <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 footer-social">
+                        <div class="pull-right hidden-xs hidden-sm">
+                            <a href="#">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-dribbble"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-pinterest"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!---->
+        <!--contact ends-->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.easing.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/wow.js"></script>
+        <script src="js/custom.js"></script>
+        <script src="contactform/contactform.js"></script>
+
+    </body>
+    <script src="assets/js/jquery-1.11.1.js"></script>
+    <!--BOOTSTRAP SCRIPTS-->
+    <script src="assets/js/bootstrap.js"></script>
+    <!--WOW SCRIPTS-->
+    <script src="assets/js/wow.js"></script>
+    <!--SCROLL SCRIPTS-->
+    <script src="assets/js/jquery.smooth-scroll.min.js"></script>
+    <!--SCROLL ANIMATION SCRIPTS-->
+    <script src="assets/js/scrollReveal.js"></script>
+    <!--CUSTOM SCRIPTS-->
+    <script src="assets/js/custom.js"></script>
+
+    <body>
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ea9dd0e7ffa2444"></script>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" <!-- image input box Copyright (c) 2020 by Aaron Vanston (https://codepen.io/aaronvanston/pen/yNYOXR) Permission is hereby granted, free of charge, to any person obtaining
+            a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+            of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+            THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+            HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. gender toggle Copyright (c)
+            2020 by Mert Cukuren (https://codepen.io/knyttneve/pen/bPpEZY) Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction,
+            including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The
+            above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+            OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+            OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. -->
+            < /html>
