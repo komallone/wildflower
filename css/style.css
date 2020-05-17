@@ -10,7 +10,6 @@ body {
   font-family: 'Open Sans', sans-serif;
   overflow-x: hidden;
 }
-
 ol, ul {
   list-style: none;
 }
@@ -66,7 +65,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar-default .navbar-brand {
   color: #339933;
-  font-size: 34px;
+  font-size: 28px;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 1px;
@@ -132,7 +131,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .title {
-  margin: 100px;
+  margin: 50px;
   font-size: 30px;
   font-weight: 700;
   color: #339933;
@@ -437,7 +436,7 @@ a, a:hover {
     font-size: 25px;
   }
   .title {
-    font-size: 30px;
+    font-size: 25px;
   }
   .sub-title {
     font-size: 24px;
@@ -682,7 +681,7 @@ body {
 
 .file-upload-btn:hover {
   background: #1AA059;
-  color: #ffffff;
+  color: #339933;
   transition: all .2s ease;
   cursor: pointer;
 }
@@ -1121,7 +1120,7 @@ input:checked + label > .knob > i:before {
   left: 0px;
   transform: rotate(134deg);
 }
-git
+
 .ad-banner {
     max-width: 320px;
     margin: 0 auto;
